@@ -1,8 +1,15 @@
 import React from "react";
-import "./App.css";
+
+import Home from "./components/Home";
+
+import "./scss/global.scss";
 
 function App() {
-  return <div className='App'>App</div>;
+  return (
+    <div className='App'>
+      <Home />
+    </div>
+  );
 }
 
 export default App;

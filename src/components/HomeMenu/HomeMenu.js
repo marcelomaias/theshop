@@ -12,35 +12,40 @@ class HomeMenu extends React.Component {
         title: "Womens",
         subtitle: "Shop Now",
         image: "https://source.unsplash.com/rDEOVtE7vOs/600x400",
-        size: "large"
+        size: "large",
+        path: "womens"
       },
       {
         id: 2,
-        title: "Men",
+        title: "Mens",
         subtitle: "Shop Now",
         image: "https://source.unsplash.com/agGIKYs4mYs/600x400",
-        size: "large"
+        size: "large",
+        path: "mens"
       },
       {
         id: 3,
         title: "Hats",
         subtitle: "Shop Now",
         image: "https://source.unsplash.com/2ki0-a7-gHw/600x400",
-        size: ""
+        size: "",
+        path: "hats"
       },
       {
         id: 4,
         title: "Jackets",
         subtitle: "Shop Now",
         image: "https://source.unsplash.com/1SiXS0xQHTA/600x400",
-        size: ""
+        size: "",
+        path: "jackets"
       },
       {
         id: 5,
         title: "Acessories",
         subtitle: "Shop Now",
         image: "https://source.unsplash.com/sEq4onJnWrI/600x400",
-        size: ""
+        size: "",
+        path: "acessories"
       }
     ]
   };
@@ -49,13 +54,14 @@ class HomeMenu extends React.Component {
 
     return (
       <div className={css.HomeMenu}>
-        {sections.map(({ id, title, subtitle, image, size }) => (
+        {sections.map(({ id, title, subtitle, image, size, path }) => (
           <HomeMenuItem
             key={id}
             title={title}
             subtitle={subtitle}
             image={image}
             size={size}
+            path={path}
           />
         ))}
       </div>
